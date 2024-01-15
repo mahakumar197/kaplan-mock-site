@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="checkboxstyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container nav-container">
+    <nav class="navbar navbar-expand-md nav-1">
+      <a class="navbar-brand py-3 nav-brand1" href="#">
+        <img src="Kaplan.png">
+      </a>
+      <button class="navbar-toggler icon-d-bp" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon icon-menu"><img src="Icon.png" alt="" class="icon-1"></span>
+        <h6>Account</h6>
+      </button>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#vertical-Menu">
+        <span class="navbar-toggler-icon icon-menu"><img src="ham.png" alt="" class="icon-2"></span>
+        <h6>menu</h6>
+      </button>
+
+      <div class=" collapse navbar-collapse mob-nav-bar " id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item py-1">
+            <a class="nav-link" href="#"><img src="Icon.png" alt="" class="icon-1"> Apprentice</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <hr>
+  <div class="container c-1 ">
+    <div class="row">
+      <div class="col-md-3  menu-vertical collapse navbar-collapse mob-nav-bar" id="vertical-Menu">
+        <div class="vertical-nav t-1">
+          <a href="" class="nav-link texthead-1 " >Account overview</a>
+          <hr>
+
+          <ul class="nav flex-column">
+            <p class="text-head">PROFILE</p>
+            <li class="nav-item">
+              <a href="" class="nav-link">Personal details</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Addresses</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Change password</a>
+            </li>
+          </ul>
+          <hr>
+          <ul class="nav flex-column">
+            <p class="text-head">ORDERS</p>
+            <li class="nav-item">
+              <a href="" class="nav-link">Order history</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Exam bookings</a>
+            </li>
+          </ul>
+          <hr>
+          <ul class="nav flex-column">
+            <p class="text-head">PREFERENCES</p>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contact preferences</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Data consent</a>
+            </li>
+          </ul>
+
+    
+          
+        </div>
+
+
+      </div>
+      <div class="container col-9 body-cont">
+        <p class="body-content">Skills & Behaviours</p>
+        <p class="sub-cont pb-5 mb-0">Eu varius ut dolor, amet ultricies cursus. Vitae in amet erat sed. Nibh integer
+          elementum vitae consequat fringilla aliquet est gravida aenean. Facilisis donec lectus risus, quam. Arcu
+          sapien ornare arcu non morbi.</p>
+        <form id="frm" method="get">
+          <div class="table-responsive">
+          <table class="table table-hover tab-1">
+            <thead>
+              <tr>
+                <th scope="col" class=" t-head-1"><input type="checkbox" class="view-all" id="view"></th>
+                <th scope="col" class=" t-head-1">Request date</th>
+                <th scope="col" class="t-head-1">Name</th>
+                <th scope="col" class="t-head-1">Organisation/Employer</th>
+                <th scope="col" class=" t-head-1">Selected Course(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row"><input type="checkbox" name="chk" onclick="getdata()" value="chk1" id="termsChkbx"></td>
+                <td>10/01/22</td>
+                <td><a href="#">Haydn Weir</a></td>
+                <td>Malt Butterscotch Associates</td>
+                <td class="d-inline-block text-truncate" style="max-width: 100px;">GB, UYO, AP ASP,ES, P</td>
+              </tr>
+              <tr>
+                <td scope="row"><input type="checkbox" name="chk" onclick="getdata()" value="chk2" id="termsChkbx"></td>
+                <td>10/01/22</td>
+                <td><a href="#">Haydn Weir</a></td>
+                <td>Malt Butterscotch Associates</td>
+                <td>GB, UYO</td>
+              </tr>
+              <tr>
+                <td scope="row"><input type="checkbox" name="chk" onclick="getdata()" value="chk3" id="termsChkbx"></td>
+                <td>10/01/22</td>
+                <td><a href="#">Haydn Weir</a></td>
+                <td>Malt Butterscotch Associates</td>
+                <td>GB, UYO</td>
+              </tr>
+              <tr>
+                <td scope="row"><input type="checkbox" name="chk" onclick="getdata()" value="chk4" id="termsChkbx"></td>
+                <td>10/01/22</td>
+                <td><a href="#">Haydn Weir</a></td>
+                <td>Malt Butterscotch Associates</td>
+                <td>GB, UYO</td>
+              </tr>
+              <tr style="display:none;" class="hide">
+                <td scope="row"><input type="checkbox" name="chk" onclick="getdata()" value="chk5" id="termsChkbx"></td>
+                <td>10/01/22</td>
+                <td><a href="#">Haydn Weir</a></td>
+                <td>Malt Butterscotch Associates</td>
+                <td>GB, UYO</td>
+              </tr>
+              <tr style="display:none;" class="hide">
+                <td scope="row"><input type="checkbox" name="chk" onclick="getdata()" value="chk6" id="termsChkbx"></td>
+                <td>10/01/22</td>
+                <td><a href="#">Haydn Weir</a></td>
+                <td>Malt Butterscotch Associates</td>
+                <td>AP</td>
+              </tr>
+              <tr style="display:none;" class="hide">
+                <td scope="row"><input type="checkbox" name="chk" onclick="getdata()" value="chk7" id="termsChkbx"></td>
+                <td>10/01/22</td>
+                <td><a href="#">Haydn Weir</a></td>
+                <td>Malt Butterscotch Associates</td>
+                <td>GB, UYO, AP</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+          </div>
+        </form>
+        <div class="d-flex btn-grp-cont">
+          <div class="show-more">
+      
+            <span class="material-symbols-outlined drop-down">
+              expand_more
+            </span>view all
+      
+          </div>
+      
+          <div class=" btn-grp-1 d-flex ml-md-auto align-items-center">
+            <div class="circle1  ml-sm-auto"><button class="circle" id="circle">0</button> Account(s) selected</div>
+            <button class="btn-dis btn-approve mx-2 " id="sub1" disabled>Approve access</button>
+            <button class="btn-dis" id="sub2" disabled>Reject access</button>
+          </div>
+      
+          
+      
+      
+        </div>
+
+
+      </div>
+    </div>
+
+<hr>
+    <div class="container-fluid container-bot">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>kaplan.co.uk</h3>
+            <p> Financial courses for professional development and career progression. Learn online or in one of our
+              classroom locations all over the UK.</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Kaplan-learning.com</h3>
+            <p>Finanicial courses specifically for students located in Asia and mainland Europe. Choose to study online
+              or via distance learning.
+          </div>
+          <div class="col-md-4">
+            <h3>Kaplanpublishing.co.uk</h3>
+            <p>Study materials for financial qualifications from one of the UK’s leading publishers.
+          </div>
+        </div>
+
+
+        <div class="container-fluid">
+          <div class="row mt-5">
+            <div class="col-9 pl-0">
+              Privacy Policy | Cookies Policy
+            </div>
+            <div class="col-3 ">
+              © 2020 Kaplan. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="accordion">
+
+      <div class="card-header px-0 " id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+            aria-controls="collapseOne">
+            Our websites
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse pl-3" aria-labelledby="headingOne" data-parent="#accordion">
+
+        Kaplan.co.uk
+        Kaplan-learning.com
+        Kaplanpublishing.co.uk
+        Financial courses for professional development and career progression. Learn online or in one of our classroom
+        locations all over the UK.
+        Finanicial courses specifically for students located in Asia and mainland Europe. Choose to study online or via
+        distance learning.
+        Study materials for financial qualifications from one of the UK’s leading publishers.
+
+
+      </div>
+
+
+      <div class="card-header px-0" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+            aria-controls="collapseTwo">  
+            Privacy Policy
+          </button>
+        </h5>
+
+      </div>
+
+      <div class="card-header px-0" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            Cookies Policy
+          </button>
+        </h5>
+      </div>
+      <p>© 2020 Kaplan. All rights reserved.</p>
+
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>

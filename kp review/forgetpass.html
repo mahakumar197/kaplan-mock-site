@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="forget.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md nav-1">
+            <a class="navbar-brand py-3 nav-brand1" href="#">
+                <img src="Kaplan.png">
+            </a>
+            <ul class="ml-auto">
+                <li class="nav-item py-1">
+                    <a class="nav-link nav-link-1" href="#">Help</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+
+    <div class="d-flex justify-content-center flex-cont">
+        <div class="card card-1">
+            <!-- <form method="post"> -->
+            <div class="card-body card-b">
+                <p class="card-title log mb-0 pb-4">Change Password</p>
+                <p class="card-text mb-0 ct">Don't have an account? <a href="registerpage.html"
+                        class="card-link clink">Register</a>
+                </p>
+
+                <div class="form-group mb-4 form-g">
+                    <label for="exampleInputEmail1" class="EM" id="email">Email address</label>
+                    <input type="email" class="form-control" id="InputEmail">
+
+                </div>
+                <div class="form-group mb-0 form-g">
+                    <label for="exampleInputPassword1" class="d-flex justify-content-between  l1 ">
+                        <p class="mb-0 PS"> Password</p>
+                    </label>
+                    <input type="password" class="form-control" id="InputPassword">
+                    <button type="button" id="btnToggle" class="toggle1">
+                        <i id="eyeIcon" class="fa fa-eye-slash"></i>
+                        <i id="eyeIcon1" class='fa fa-eye'></i>
+                    </button>
+                </div>
+
+                <button type="submit" class="btn btn-primary log-btn" id="submit" onclick="changeMail()">Login</button>
+            </div>
+            <!-- </form> -->
+
+        </div>
+    </div>
+
+
+    <div class="py-5 container-bot fixed-bottom">
+        <div class="container">
+            <!-- <a href="https://kaplaneducation-eu.freshdesk.com/support/home"> -->
+                <a href="https://kaplaneducation-eu.freshdesk.com/support/home" target="_blank" rel="noopener noreferrer">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>kaplan.co.uk</h3>
+                    <p> Financial courses for professional development and career progression. Learn online or in one of
+                        our classroom locations all over the UK.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Kaplan-learning.com</h3>
+                    <p>Finanicial courses specifically for students located in Asia and mainland Europe. Choose to study
+                        online or via distance learning.
+                </div>
+                <div class="col-md-4">
+                    <h3>Kaplanpublishing.co.uk</h3>
+                    <p>Study materials for financial qualifications from one of the UK’s leading publishers.
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-9 pl-0">
+                        Privacy Policy | Cookies Policy
+                    </div>
+                    <div class="col-3 ">
+                        © 2020 Kaplan. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordion">
+
+        <div class="card-header px-0 " id="headingOne">
+            <h5 class="mb-0 accor-btn-oweb">
+                <button class="btn btn-link " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Our websites
+                </button>
+                <span class="material-symbols-outlined" id="expandIcon">
+                    expand_more
+                </span>
+            </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse pl-3" aria-labelledby="headingOne" data-parent="#accordion">
+
+            Kaplan.co.uk
+            Kaplan-learning.com
+            Kaplanpublishing.co.uk
+            Financial courses for professional development and career progression. Learn online or in one of our
+            classroom locations all over the UK.
+            Finanicial courses specifically for students located in Asia and mainland Europe. Choose to study online or
+            via distance learning.
+            Study materials for financial qualifications from one of the UK’s leading publishers.
+
+
+        </div>
+
+        <hr class="bg-secondary  mx-3">
+        <div class="card-header px-0" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    Privacy and Cookies Policies
+                </button>
+            </h5>
+
+        </div>
+        <hr class="bg-secondary mx-3">
+        <p>© 2020 Kaplan. All rights reserved.</p>
+
+    </div>
+    <script>
+
+
+
+        let passwordInput = document.getElementById('InputPassword'),
+            toggle = document.getElementById('btnToggle'),
+            icon = document.getElementById('eyeIcon'),
+            icon1 = document.getElementById('eyeIcon1');
+
+
+        function changeMail() {
+            let EmailId = document.getElementById('InputEmail').value;
+            let newpass = document.getElementById('InputPassword').value;
+
+            // alert(localStorage.getItem("email1"));
+            // alert(EmailId);
+
+            if (EmailId == localStorage.getItem("email1")) {
+                alert("Password successfully changed!!");
+                localStorage.setItem("password1", newpass);
+                window.location.href = "loginpage.html";
+            }
+            else {
+                alert("mail ids are not match");
+
+            }
+        }
+
+        function togglePassword() {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.style.display = "none";
+                icon1.style.display = "block";
+
+            } else {
+                passwordInput.type = 'password';
+                icon1.style.display = "none";
+                icon.style.display = "block";
+            }
+        }
+
+        toggle.addEventListener('click', togglePassword, false);
+
+    </script>
+
+</body>
+
+</html>

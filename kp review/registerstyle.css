@@ -1,0 +1,231 @@
+.nav-container {
+    background-color: #FFFFFF;
+}
+
+.nav-link-1 {
+    color: #110343;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+hr {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex-cont {
+    background-color: rgba(249, 249, 249, 1);
+}
+
+.card-1 {
+    width: 570px !important;
+    height: 840px;
+    margin: 40px 0 148px 0;
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.16);
+}
+
+.card-b {
+    padding: 40px;
+}
+
+.ct {
+    color: #676666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 40px;
+
+}
+
+.clink {
+    color: #006CAA;
+    text-decoration: underline;
+}
+
+.clink-1 {
+    color: #110343;
+}
+
+.l1 {
+    font-size: 14px;
+}
+
+label {
+    color: #676666;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.toggle1 {
+    background: none;
+    border: none;
+    font-weight: 600;
+    position: absolute;
+    right: 3rem;
+    top: 19.4rem;
+
+}
+
+.log-btn {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    height: 64px;
+    color: #110343;
+    border-radius: 4px;
+    padding: 20px 0;
+    background-color: #C1D82F;
+    font-weight: 600;
+    border: none;
+    /* width: 490px; */
+    width: 100%;
+}
+
+.log {
+    color: #110343;
+    line-height: 48px;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.container-bot {
+    background-color: #110343;
+    color: #FFFFFF;
+}
+
+.container-bot .row h3,
+.container-fluid .row div {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.container-bot .row p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#accordion {
+    background-color: #110343;
+    color: #FFFFFF;
+}
+
+.accor-btn-oweb {
+    padding-top: 25px;
+}
+
+#accordion h5 button,
+p {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+#accordion p {
+    font-weight: 400;
+    padding: 32px 16px 8px 16px;
+}
+.form-box .fa{
+    position: absolute;
+    right: 65px;
+    margin-top: -30px;
+}
+.form-box .form-g.error input{
+    border-color: #f00;
+    border-width: 2px;
+}
+.form-box .form-g.error .fa{
+    color: #f00;
+}
+.form-box .form-g.success input{
+    border-color: #0b0;
+    border-width: 2px;
+}
+.form-box .form-g.success .fa{
+    color: #0b0;
+}
+.form-g span{
+display: none;
+}
+.form-g.error span{
+    color: #f00;
+    display: block
+}
+
+.form-g.success span{
+    color: #0b0;
+}
+
+
+/* #eyeIcon1 {
+    display: none;
+}
+
+#expandIcon {
+    vertical-align: middle;
+    margin-left: 15.6rem;
+} */
+
+@media (max-width:767px) {
+    body {
+        max-width: 100%;
+        margin: 2% 2%;
+    }
+
+    .nav-1,
+    .nav-link-1 {
+        padding: 0;
+    }
+
+    .nav-brand1 {
+        padding: 0 !important;
+    }
+
+    .nav-brand1 img {
+
+        padding-bottom: 10px;
+    }
+
+    /* input[type=email] , input[type=password]{
+        height: 55px;
+    } */
+    .log-btn {
+        height: 55px;
+        padding: 10px 0;
+    }
+
+    .container-bot {
+        display: none;
+    }
+
+    .card-1 {
+        margin: 0;
+        box-shadow: none;
+        /* padding: 30px 20px; */
+    }
+
+    .card-b {
+        padding: 15px;
+    }
+
+    #accordion h5 button,
+    p {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+
+    }
+
+}
+
+@media (min-width:768px) {
+    #accordion {
+        display: none;
+    }
+
+
+}
