@@ -1,0 +1,2 @@
+Kaplan is a well-known educational company that offers a variety of educational services, including test preparation for standardized exams, higher education programs, professional training, and more. Kaplan's educational platform provides resources and support for students and professionals in various fields.
+In my traning period i created a mock site for my project along with html, css, bootsrap,javascript and jquery.
